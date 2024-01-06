@@ -1,0 +1,14 @@
+{
+  "users": [
+    {
+      "firstName": "jhon",
+      "lastName": "smith",
+      "username": "nikesh_sanjay_007",
+      "email": "nikeshsanjay9@gmail.com",
+      "password": "Nik@2004",
+      "confirmPassword": "Nik@2004",
+      "gender": "male",
+      "id": 1
+    }
+  ]
+}

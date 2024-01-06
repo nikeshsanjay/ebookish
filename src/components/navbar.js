@@ -9,6 +9,8 @@ import va from '../assest/va.png';
 import {Cards, Popular} from './cards';
 import cse from '../assest/cse.jpg';
 import oip from '../assest/oip.jpg'
+import Login from './signin';
+import Register from './signup';
 function Ls()
 {
     return(
@@ -56,40 +58,40 @@ function Ls()
 
     )
 }
-function Login()
-{
-    return(
-        <header>       
-            <img src={cse} className='m11'></img>
-             <div style={{
-            marginLeft: '590px',
-            marginTop: '100px',
-            backgroundColor: 'rgba(0, 0, 0, 0.633)',
-            color: 'white',
-            padding: '50px',
-            width: '300px',
-            borderRadius: '30px'
-        }} className='m10'>
-            <img src={va} height={80} width={290 } className='mp13'></img>
-            <h3 style={{
-                textDecoration: 'Underline'
-            }}>Login</h3>
-            <form>
-                <label>Username:
-                    <input type="text" />
-                </label><br></br>
-                <br></br>
-                <label>Password:
-                    <input type="password" />
-                </label>
-            <h6>Don't you have an account? <Link to='/register' className='m12'>Register</Link></h6>
-            </form>
-            <DyRender />
-        </div>
-        </header>
+// function Login()
+// {
+//     return(
+//         <header>       
+//             <img src={cse} className='m11'></img>
+//              <div style={{
+//             marginLeft: '590px',
+//             marginTop: '100px',
+//             backgroundColor: 'rgba(0, 0, 0, 0.633)',
+//             color: 'white',
+//             padding: '50px',
+//             width: '300px',
+//             borderRadius: '30px'
+//         }} className='m10'>
+//             <img src={va} height={80} width={290 } className='mp13'></img>
+//             <h3 style={{
+//                 textDecoration: 'Underline'
+//             }}>Login</h3>
+//             <form>
+//                 <label>Username:
+//                     <input type="text" />
+//                 </label><br></br>
+//                 <br></br>
+//                 <label>Password:
+//                     <input type="password" />
+//                 </label>
+//             <h6>Don't you have an account? <Link to='/register' className='m12'>Register</Link></h6>
+//             </form>
+//             <DyRender />
+//         </div>
+//         </header>
 
-    )
-}
+//     )
+// }
 function Home()
 {
     return(
@@ -147,49 +149,49 @@ Happy Reading!</p>
         
     )
 }
-function  Register()
-{
-    return(
-        <div>
-            <img src={oip} className='m15'></img>
-        <div style={{
-            marginLeft: '530px',
-            marginTop: '100px',
-            backgroundColor: 'rgba(0, 0, 0, 0.633)',
-            color: 'white',
-            padding: '70px',
-            width: '400px',
-            borderRadius: '30px'}} className='m14'>
-                <img src={va} height={80} width={290 } className='mp13'></img>
-             <h3 style={{textDecoration: 'underline'}}>Register</h3>
-            <form>
-                <label>FirstName:
-                    <input type="text" />
-                </label><br></br>
-                <br></br>
-                <label>LastName:
-                    <input type="text" />
-                </label>
-                <br></br><br></br>
-                <label>UserName:
-                    <input type="text" />
-                </label>
-                <br></br><br></br>
-                <label>Password:
-                    <input type="Password" />
-                </label>
-                <br></br><br></br>
-                <label>EMail:
-                    <input type="mail" />
-                </label>
-                <br></br>
-                <br></br>
-                <button><Link to='/rs' className='m12'>Register</Link></button>
-            </form><br></br>
-        </div>
-        </div>
-    )
-}
+// function  Register()
+// {
+//     return(
+//         <div>
+//             <img src={oip} className='m15'></img>
+//         <div style={{
+//             marginLeft: '530px',
+//             marginTop: '100px',
+//             backgroundColor: 'rgba(0, 0, 0, 0.633)',
+//             color: 'white',
+//             padding: '70px',
+//             width: '400px',
+//             borderRadius: '30px'}} className='m14'>
+//                 <img src={va} height={80} width={290 } className='mp13'></img>
+//              <h3 style={{textDecoration: 'underline'}}>Register</h3>
+//             <form>
+//                 <label>FirstName:
+//                     <input type="text" />
+//                 </label><br></br>
+//                 <br></br>
+//                 <label>LastName:
+//                     <input type="text" />
+//                 </label>
+//                 <br></br><br></br>
+//                 <label>UserName:
+//                     <input type="text" />
+//                 </label>
+//                 <br></br><br></br>
+//                 <label>Password:
+//                     <input type="Password" />
+//                 </label>
+//                 <br></br><br></br>
+//                 <label>EMail:
+//                     <input type="mail" />
+//                 </label>
+//                 <br></br>
+//                 <br></br>
+//                 <button><Link to='/rs' className='m12'>Register</Link></button>
+//             </form><br></br>
+//         </div>
+//         </div>
+//     )
+// }
 function Navbar()
 {
     return (
@@ -210,8 +212,8 @@ function Navbar()
             </div>
             <Routes>
                 <Route exact path='/' element={<Home/>} />
-                <Route exact path='/login' element={<Login/>} />
-                <Route exact path='/register' element={<Register/>} />
+                <Route exact path='/login' element={<Login/>}/>
+                <Route exact path='/register' element={<Register/>}/>
                 <Route exact path='/ls' element={<Ls/>} />
                 <Route exact path='/rs' element={<Rs/>} />
                 <Route exact path='/pop' element={<Popular/>}/>
